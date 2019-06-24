@@ -14,5 +14,7 @@ services:
       - mongo
   mongo:
     image: mongo
+    volumes:
+    - /Users/bnelson/mongodb:/mongo/db
     ports:
       - "27017:27017"
